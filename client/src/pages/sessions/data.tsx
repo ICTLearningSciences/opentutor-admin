@@ -649,9 +649,7 @@ export interface LessonExpectationSearch {
 }
 
 // eslint-disable-next-line  @typescript-eslint/no-unused-vars
-function Data(props: {
-  search: LessonExpectationSearch;
-}): JSX.Element {
+function Data(props: { search: LessonExpectationSearch }): JSX.Element {
   const { lessonId, expectation } = props.search;
   console.log(props.search);
   const context = useContext(SessionContext);
